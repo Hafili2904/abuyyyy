@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>Untuk Anin ♡</title>
+
+<style>
+:root {
+  --pink: #e8789c;
+  --dark-pink: #b54470;
+  --soft-pink: #fff0f5;
+  --cream: #fffaf5;
+  --text: #634653;
+  --green: #688c76;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: linear-gradient(180deg, #fff8fb, #fffaf4);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fffaf5ee;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f4d9e3;
+}
+
+nav {
+  max-width: 1000px;
+  margin: auto;
+  padding: 13px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  color: var(--dark-pink);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav .links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-pink);
+  font-size: .9rem;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 20px;
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 6vw, 65px);
+  border: 1px solid #f4ccda;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffe1ec, #fff8ee, #fce9f1);
+  box-shadow: 0 15px 45px #a7466c12;
+}
+
+.hero-card::after {
+  content: "♡";
+  position: absolute;
+  right: 15px;
+  bottom: -90px;
+  color: #e8789c20;
+  font-size: 250px;
+  pointer-events: none;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffffb8;
+  border: 1px solid #f3cbd9;
+  border-radius: 30px;
+  color: var(--dark-pink);
+  font-size: .85rem;
+}
+
+h1 {
+  color: var(--dark-pink);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.15;
+  margin: 20px 0 12px;
+}
+
+.hero p {
+  max-width: 650px;
+}
+
+.heart {
+  display: inline-block;
+  animation: beat 1.4s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: .95rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: var(--pink);
+  color: white;
+  box-shadow: 0 7px 18px #e8789c35;
+}
+
+.secondary {
+  background: white;
+  border: 1px solid #efc5d4;
+  color: var(--dark-pink);
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 55px;
+}
+
+.heading {
+  margin: 45px 0 20px;
+  text-align: center;
+}
+
+.heading h2 {
+  margin-bottom: 5px;
+  color: var(--dark-pink);
+}
+
+.heading p {
+  margin-top: 0;
+  color: #927583;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 22px;
+  background: #fffdfb;
+  border: 1px solid #f2d9e2;
+  border-radius: 23px;
+  box-shadow: 0 10px 25px #a7466c08;
+}
+
+.card .emoji {
+  font-size: 2rem;
+}
+
+.card h3 {
+  margin: 8px 0;
+  color: var(--dark-pink);
+}
+
+.card p {
+  font-size: .94rem;
+}
+
+.card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+section.content {
+  margin-top: 24px;
+  padding: clamp(22px, 4vw, 36px);
+  border: 1px solid #f1d6e0;
+  border-radius: 26px;
+  background: #fffdfb;
+  box-shadow: 0 10px 25px #a7466c08;
+}
+
+.letter {
+  background: linear-gradient(135deg, #fffdfb, #fff0f5) !important;
+}
+
+.prayer {
+  background: linear-gradient(135deg, #fffdf6, #f0f6ee) !important;
+  border-color: #dce9dc !important;
+}
+
+section h2 {
+  color: var(--dark-pink);
+  line-height: 1.4;
+}
+
+.prayer h2 {
+  color: #426d58;
+}
+
+.letter p {
+  margin-bottom: 17px;
+}
+
+.prayer-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #dce9dc;
+}
+
+.prayer-item:last-child {
+  border-bottom: 0;
+}
+
+.arabic {
+  margin: 12px 0;
+  text-align: right;
+  direction: rtl;
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #426d58;
+}
+
+.translation {
+  color: #597364;
+}
+
+.note {
+  padding: 17px;
+  background: #fff0f5;
+  border-radius: 17px;
+}
+
+.quote-box {
+  padding: 22px;
+  border: 1px dashed #eab4c9;
+  border-radius: 20px;
+  background: #fff1f5;
+  font-size: 1.05rem;
+}
+
+.reminders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reminder {
+  padding: 14px 8px;
+  border: 1px solid #f2dce4;
+  border-radius: 17px;
+  background: white;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.reminder span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.signature {
+  margin-top: 25px;
+  color: var(--dark-pink);
+  text-align: right;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  padding: 30px 15px 45px;
+  text-align: center;
+  color: #987181;
+}
+
+footer strong {
+  color: var(--dark-pink);
+}
+
+.toast {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: #704458;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+
+  nav .links {
+    gap: 14px;
+  }
+
+  nav a {
+    font-size: .82rem;
+  }
+
+  .hero {
+    padding: 12px;
+  }
+
+  .hero-card {
+    padding: 27px 22px;
+    border-radius: 24px;
+  }
+
+  main {
+    padding: 0 13px 35px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .reminders {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.content {
+    padding: 22px 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#beranda">♡ Untuk Anin ♡</a>
+    <div class="links">
+      <a href="#beranda">Beranda</a>
+      <a href="#surat">Surat</a>
+      <a href="#doa">Doa</a>
+      <a href="#semangat">Semangat</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero" id="beranda">
+  <div class="hero-card">
+    <span class="pill">Surat kecil buat Anin 🌷</span>
+    <h1>Haii, Anin! <span class="heart">♡</span></h1>
+
+    <p>
+      Hari ini kamu lagi berjuang menghadapi TKA.
+      Aku bikin halaman kecil ini supaya kamu selalu
+      ingat kalau kamu punya banyak alasan untuk tetap
+      semangat dan percaya sama diri sendiri.
+    </p>
+
+    <p>
+      <strong>
+        Pelan-pelan aja, yaa. Satu soal demi satu soal.
+        Semoga hari ini membawa banyak hal baik buat kamu. 💗
+      </strong>
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#surat">💌 Buka surat</a>
+      <a class="btn secondary" href="#doa">🤲 Baca doa</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <div class="heading">
+    <h2>Sedikit pengingat buat kamu ♡</h2>
+    <p>Semangat, doa, dan kasih sayang dari jauh.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">💌</div>
+      <h3>Surat buat Anin</h3>
+      <p>Ada beberapa hal yang ingin aku sampaikan dari hati.</p>
+      <a class="btn primary" href="#surat">Buka surat ♡</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🤲</div>
+      <h3>Doa untuk TKA</h3>
+      <p>Semoga Allah memberikan kemudahan dan ketenangan.</p>
+      <a class="btn primary" href="#doa">Baca doa</a>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🌷</div>
+      <h3>Kata penyemangat</h3>
+      <p>Pengingat kecil kalau usaha kamu itu berarti.</p>
+      <a class="btn primary" href="#semangat">Buka pesan</a>
+    </article>
+  </div>
+
+  <section class="content letter" id="surat">
+    <h2>💌 Surat buat Anin tersayang</h2>
+
+    <p>Haii Aninn sayangggg 💗🥹</p>
+
+    <p>
+      Semangat TKA-nya yaa, sayanggg. Aku tahu kamu
+      udah berusaha sejauh ini, dan aku bangga sama kamu.
+      Hari ini, kamu nggak harus jadi sempurna, yaa.
+      Kerjakan semampu kamu, baca soalnya baik-baik,
+      dan jangan lupa berdoa.
+    </p>
+
+    <p>
+      Aku mungkin nggak bisa nemenin kamu secara langsung
+      sekarang, tapi aku selalu mendoakan kamu dari jauh.
+      Semoga Allah mudahkan setiap soal yang kamu kerjakan,
+      tenangkan hati kamu, dan kasih hasil yang terbaik
+      buat kamu.
+    </p>
+
+    <p>
+      Kalau nanti ada soal yang susah, jangan langsung
+      panik, yaa. Tarik napas pelan-pelan, baca lagi
+      soalnya, dan kerjakan satu per satu. Kamu udah
+      berusaha sampai sejauh ini, jadi kasih kesempatan
+      buat diri kamu sendiri untuk melakukan yang terbaik.
+    </p>
+
+    <p>
+      Anin, aku bangga sama kamu bukan cuma karena nilai
+      yang nanti kamu dapatkan, tapi juga karena kamu
+      udah berusaha dan berani menghadapi semua ini.
+      Jangan terlalu keras sama diri sendiri, yaa.
+      Kamu juga berhak merasa tenang dan bahagia.
+    </p>
+
+    <p>
+      Aku berharap hari ini berjalan dengan lancar buat
+      kamu. Semoga kamu bisa mengerjakan soal-soalnya
+      dengan tenang, bisa mengingat apa yang sudah kamu
+      pelajari, dan diberikan kemudahan dari awal sampai
+      selesai.
+    </p>
+
+    <p>
+      Apa pun hasilnya nanti, jangan lupa kalau usaha
+      kamu itu berarti. Nilai memang penting, tapi nilai
+      bukan satu-satunya hal yang menentukan betapa
+      berharganya diri kamu. Aku tetap bangga sama kamu
+      karena kamu sudah mau berusaha.
+    </p>
+
+    <p>
+      Semangat terusss, Aninn sayanggg! Jangan lupa
+      makan, minum, dan istirahat setelah selesai, yaa.
+      Semoga semua usaha kamu membuahkan hasil yang
+      indah dan menjadi jalan menuju masa depan yang
+      kamu impikan.
+    </p>
+
+    <p>
+      Semoga Allah selalu menjaga kamu, memberikan
+      ketenangan, melancarkan TKA kamu, dan memberikan
+      hasil yang terbaik. Aamiin ya Allah. 🤲🤍
+    </p>
+
+    <p>
+      Aku selalu dukung kamu. I love you, Anin. 💗
+    </p>
+
+    <div class="signature">♡</div>
+  </section>
+
+  <section class="content prayer" id="doa">
+    <h2>🤲 Doa supaya TKA Anin dimudahkan</h2>
+
+    <p>
+      Bismillah. Semoga Allah memberikan ketenangan,
+      kemudahan, dan kelancaran untuk kamu hari ini.
+    </p>
+
+    <div class="prayer-item">
+      <strong>1. Doa memohon tambahan ilmu</strong>
+      <div class="arabic">رَبِّ زِدْنِي عِلْمًا</div>
+      <p class="translation">
+        Rabbi zidnii 'ilmaa.
+        <br>
+        Artinya: "Ya Tuhanku, tambahkanlah ilmu kepadaku."
+        (QS. Taha: 114)
+      </p>
+    </div>
+
+    <div class="prayer-item">
+      <strong>2. Doa memohon kemudahan</strong>
+      <div class="arabic">
+        رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي
+      </div>
+      <p class="translation">
+        Rabbi syrah lii shadrii, wa yassir lii amrii.
+        <br>
+        Artinya: "Ya Tuhanku, lapangkanlah dadaku dan
+        mudahkanlah urusanku." (QS. Taha: 25–26)
+      </p>
+    </div>
+
+    <div class="prayer-item">
+      <strong>3. Doa dari aku untuk Anin</strong>
+      <p>
+        Ya Allah, mudahkanlah langkah Anindya Syifa dalam
+        menjalani TKA. Tenangkan hatinya, jernihkan
+        pikirannya, kuatkan ingatannya, dan bantulah dia
+        memahami setiap soal yang dihadapi.
+      </p>
+      <p>
+        Ya Allah, jauhkan Anin dari rasa panik yang
+        berlebihan. Berikan kesehatan, kelancaran, dan
+        kemudahan dari awal sampai akhir. Berkahilah
+        setiap usaha dan proses belajarnya.
+      </p>
+      <p>
+        Semoga Engkau memberikan hasil yang terbaik
+        untuknya, membahagiakan hatinya, dan menjadikan
+        ilmu yang diperolehnya bermanfaat untuk masa
+        depannya. Jagalah Anin di mana pun dia berada.
+        Aamiin ya Rabbal 'alamin. 🤍
+      </p>
+    </div>
+
+    <div class="note">
+      Ingat yaa, sayang. Berusaha sebaik mungkin,
+      berdoa, lalu serahkan hasilnya kepada Allah. ♡
+    </div>
+  </section>
+
+  <section class="content" id="semangat">
+    <h2>🌷 Kata-kata semangat buat Anin</h2>
+
+    <div class="quote-box" id="quote">
+      Kamu nggak harus sempurna untuk bisa melakukan
+      yang terbaik. Tenangkan hati, percaya pada usaha
+      yang sudah kamu lakukan, dan hadapi satu soal demi
+      satu soal. Aku dukung kamu selalu. ♡
+    </div>
+
+    <div class="buttons">
+      <button class="btn primary" id="newQuote">
+        Kasih aku semangat lagi ♡
+      </button>
+      <button class="btn secondary" id="copyQuote">
+        Salin kata-kata
+      </button>
+    </div>
+
+    <div class="reminders">
+      <div class="reminder">
+        <span>💧</span>Minum air yang cukup
+      </div>
+      <div class="reminder">
+        <span>🍞</span>Makan kalau ada waktu
+      </div>
+      <div class="reminder">
+        <span>🌿</span>Tarik napas, tetap tenang
+      </div>
+      <div class="reminder">
+        <span>🤍</span>Berdoa dan percaya diri
+      </div>
+    </div>
+
+    <p class="center" style="margin-top:25px">
+      Apa pun yang terjadi hari ini, kamu sudah berusaha.
+      Jangan lupa apresiasi diri kamu sendiri, yaa. 💗
+    </p>
+
+    <p class="center">
+      Semangat TKA-nya, Aninnn sayanggg! ♡
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Dibuat dengan banyak doa dan kasih sayang <span class="heart">♡</span>
+  <br>
+  <strong>Untuk Anin, dari aku.</strong>
+  <br>
+  Semoga Allah mudahkan setiap langkahmu. Aamiin 🤍
+</footer>
+
+<div class="toast" id="toast">Tersalin ♡</div>
+
+<script>
+const quotes = [
+  "Kamu nggak harus sempurna untuk bisa melakukan yang terbaik. Tenangkan hati, percaya pada usaha yang sudah kamu lakukan, dan hadapi satu soal demi satu soal. Aku dukung kamu selalu. ♡",
+
+  "Kalau ada soal yang terasa sulit, tarik napas dulu, baca lagi dengan tenang, lalu coba kerjakan. Satu soal sulit nggak menentukan seluruh kemampuan kamu, Anin. 🌷",
+
+  "Bismillah, Anin. Semoga Allah menenangkan hati kamu, memudahkan pikiran kamu, dan membimbing kamu menemukan jawaban terbaik. Aku ikut berdoa dari sini. 🤲",
+
+  "Jangan lupa, kamu lebih dari sekadar angka atau nilai. Kamu adalah seseorang yang sudah berusaha, belajar, dan berani menghadapi tantangan. Aku bangga sama kamu. ♡",
+
+  "Pelan-pelan aja, yaa. Baca soalnya baik-baik, kerjakan semampu kamu, dan jangan lupa bernapas. Kamu sudah melakukan yang kamu bisa hari ini. 💗",
+
+  "Setelah ujian selesai, jangan lupa bilang terima kasih ke diri sendiri karena sudah berusaha. Apa pun hasilnya, kamu tetap berharga, Anin. 🤍"
+];
+
+let previous = -1;
+
+document.getElementById("newQuote").addEventListener("click", () => {
+  let index;
+
+  do {
+    index = Math.floor(Math.random() * quotes.length);
+  } while (index === previous && quotes.length > 1);
+
+  previous = index;
+  document.getElementById("quote").textContent = quotes[index];
+});
+
+document.getElementById("copyQuote").addEventListener("click", async () => {
+  const text = document.getElementById("quote").textContent;
+
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (error) {
+    const area = document.createElement("textarea");
+    area.value = text;
+    document.body.appendChild(area);
+    area.select();
+    document.execCommand("copy");
+    area.remove();
+  }
+
+  showToast("Kata-katanya tersalin ♡");
+});
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.display = "block";
+
+  setTimeout(() => {
+    toast.style.display = "none";
+  }, 2000);
+}
+</script>
+
+</body>
+</html>
